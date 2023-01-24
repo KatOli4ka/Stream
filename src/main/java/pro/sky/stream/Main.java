@@ -11,13 +11,13 @@ import java.util.stream.Stream;
 public class Main {
     public static void main(String[] args) {
 
-        Stream<Integer> stream = new ArrayList<>(Arrays.asList(140, 1, 87, 9, 8, 10, 873)).stream();
+        Stream<Integer> stream = new ArrayList<>(Arrays.asList(140, 1, 87, 9, 8, 10, 873,0)).stream();
         findMinMax(
                 stream,
                 Comparator.naturalOrder(),
                 (x, y) -> System.out.printf("min: %s, max: %s%n", x, y)
         );
-        getSizeEvenNumbers(1, 6, 3, 8);
+        getSizeEvenNumbers(1, 6, 3, 8,98);
     }
 
     public static <T> void findMinMax(
